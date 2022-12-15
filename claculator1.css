@@ -1,0 +1,68 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #181D31;
+}
+.container{
+    max-width: 500px;
+    height: 600px;
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 2%;
+    box-shadow: 5px 15px 8px rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 50px;
+    background-color: #678983;
+    padding: 12px;
+}
+.dis{
+    margin-top: 3px;
+    margin-bottom: 15px;
+    box-shadow: 3px 7px 8px inset;
+}
+.dis{
+    font-size: 50px;
+    margin-top:10px ;
+    border-radius: 2%;
+    height: 80px;
+    width: 98%;
+    background-color: #CBEDD5;
+}
+.buttons123{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 98px 98px 98px 98px;
+    text-align: center;
+    /* margin-left: 10px; */
+    /* background: none; */
+    border: solid 1px;
+     /* width: 480px; */
+    /* height: 475px; */ 
+    box-shadow: 3px 7px 8px inset;
+}
+
+.butn2{
+    display: grid;
+    grid-template-columns: 50.5% 49.5%;
+    grid-template-rows: 90px ;
+    /* width: ; */
+}
+
+.num{
+    background-color: #fefefe;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.operator{
+    background-color:  rgb(214, 208, 2   01);
+    border-style: double;
+    cursor: pointer;
+    font-size: 30px;
+}
+.ans{
+    background-color: sandybrown;
+    cursor: pointer;
+    font-size: 30px;
+    /* grid-area: head; */
+}

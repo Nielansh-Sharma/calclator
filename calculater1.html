@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="claculator1.css">
+    <title>calculater</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="calculate" name="calculate">
+            <div class="display">
+                <input type="text" name="disp" class="dis" placeholder="CALCULATOR" readonly>
+            </div>
+            <div class="butn2">
+                <button class="ans" id="0" value="C" onclick="Clear()">c</button>
+                <input type="button" class="ans" id="sum" value="=" onclick="calculateans()">
+            </div>
+
+
+            <div class="buttons123">
+
+
+
+                <input type="button" class="num" id="9" value="9" onclick="valueofbutton(this);">
+                <input type="button" class="num" id="8" value="8" onclick="valueofbutton(this);">
+                <input type="button" class="num" id="7" value="7" onclick="valueofbutton(this);">
+                <input type="button" class="operator" id="sum" value="+" onclick="valueofbutton(this);">
+
+
+                <input type="button" class="num" id="6" value="6" onclick="valueofbutton(this);">
+                <input type="button" class="num" id="5" value="5" onclick="valueofbutton(this);">
+                <input type="button" class="num" id="4" value="4" onclick="valueofbutton(this);">
+                <input type="button" class="operator" id="divide" value="/" onclick="valueofbutton(this);">
+
+
+                <input type="button" class="num" id="3" value="3" onclick="valueofbutton(this);" >
+                <input type="button" class="num" id="2" value="2" onclick="valueofbutton(this);">
+                <input type="button" class="num" id="1" value="1" onclick="valueofbutton(this);">
+                <input type="button" class="operator" id="multiply" value="*" onclick="valueofbutton(this);">
+
+
+                <input type="button" class="num" id="0" value="00" onclick="valueofbutton(this);">
+                <input type="button" class="num" id="c" value="0" onclick="valueofbutton(this)">
+                <input type="button" class="num" id="=" value="⬅" onclick="backspace()">
+                <input type="button" class="operator" id="sub" value="-" onclick="valueofbutton(this);">
+
+            </div>
+        </form>
+    </div>
+    <script>
+        function valueofbutton(e) {
+            calculate.disp.value += e.value;
+        }
+        function Clear() {
+            calculate.disp.value = null;
+        }
+        function backspace() {
+            calculate.disp.value = calculate.disp.value.slice(0, -1);
+        }
+        function calculateans() {
+            calculate.disp.value = eval(calculate.disp.value);
+        }
+    
+         var awp = document.querySelector(".num");
+         
+        for(item of  awp){
+            item.addEventListener("keypress", function (){
+              var  uk = this.value;
+              console.log("button ids", uk);
+             } );
+        };
+    </script>
+</body>
+
+</html>
