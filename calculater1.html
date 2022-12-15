@@ -16,8 +16,8 @@
                 <input type="text" name="disp" class="dis" placeholder="CALCULATOR" readonly>
             </div>
             <div class="butn2">
-                <button class="ans" id="0" value="C" onclick="Clear()">c</button>
-                <input type="button" class="ans" id="sum" value="=" onclick="calculateans()">
+                <button class="ans" id="0" value="C" onclick="Clear()" style="background-color: rgb(244, 75, 57)">c</button>
+                <input type="button" class="ans" id="sum" value="=" onclick="calculateans()" style="background-color: rgb(246, 181, 89);">
             </div>
 
 
@@ -66,14 +66,14 @@
             calculate.disp.value = eval(calculate.disp.value);
         }
     
-         var awp = document.querySelector(".num");
+        //  var awp = document.querySelector(".num");
          
-        for(item of  awp){
-            item.addEventListener("keypress", function (){
-              var  uk = this.value;
-              console.log("button ids", uk);
-             } );
-        };
+        // for(item of  awp){
+        //     item.addEventListener("keypress", function (){
+        //       var  uk = this.value;
+        //       console.log("button ids", uk);
+        //      } );
+        // };
     </script>
 </body>
 
