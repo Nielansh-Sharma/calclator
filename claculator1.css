@@ -16,11 +16,8 @@ body{
     padding: 12px;
 }
 .dis{
-    margin-top: 3px;
     margin-bottom: 15px;
     box-shadow: 3px 7px 8px inset;
-}
-.dis{
     font-size: 50px;
     margin-top:10px ;
     border-radius: 2%;
@@ -30,14 +27,10 @@ body{
 }
 .buttons123{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 25% 25% 25% 25% ;
     grid-template-rows: 98px 98px 98px 98px;
     text-align: center;
-    /* margin-left: 10px; */
-    /* background: none; */
     border: solid 1px;
-     /* width: 480px; */
-    /* height: 475px; */ 
     box-shadow: 3px 7px 8px inset;
 }
 
